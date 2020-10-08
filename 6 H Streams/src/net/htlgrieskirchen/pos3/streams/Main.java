@@ -17,6 +17,7 @@ import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 /**
  *
@@ -32,8 +33,8 @@ public class Main {
         List<Weapon> list = m.readCsv();
         m.sortedByName(list);
         m.printByLambdaInTabelle(list);
-        m.StringArrayRandom();
-
+        m.stringArrayRandom();
+        m.aufgabeVier();
     }
 
     public List<Weapon> sortedByDamage(List<Weapon> myList) {
@@ -115,7 +116,7 @@ public class Main {
         System.out.println("-----------------------------------------------------------------");
     }
 
-    public void array10000() {
+    public void intArrayRandom() {
         int[] arr = new int[10000];
         int max = 100;
         int min = 0;
@@ -125,7 +126,7 @@ public class Main {
         }
     }
 
-    public void StringArrayRandom() {
+    public void stringArrayRandom() {
         String[] arr = new String[10];
         byte[] b = new byte[10];
         for (int i = 0; i < arr.length; i++) {
@@ -135,4 +136,8 @@ public class Main {
         Arrays.stream(arr).forEach((n) -> System.out.println(n));
     }
 
+    public void aufgabeVier() {
+        final int result = IntStream.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10).filter((s) -> s % 2 == 1).map((s) -> s * s).sum();
+        System.out.println(result);
+    }
 }
