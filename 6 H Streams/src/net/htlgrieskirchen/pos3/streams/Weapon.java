@@ -3,7 +3,7 @@ package net.htlgrieskirchen.pos3.streams;
 import java.util.Objects;
 
 public class Weapon {
-    
+
     private final String name;
     private final CombatType combatType;
     private final DamageType damageType;
@@ -13,49 +13,58 @@ public class Weapon {
     private int value;
 
     public Weapon(String name, CombatType combatType, DamageType damageType, int damage, int speed, int minStrength, int value) {
-        //implement this
+        this.name = name;
+        this.combatType = combatType;
+        this.damageType = damageType;
+        this.damage = damage;
+        this.speed = speed;
+        this.minStrength = minStrength;
+        this.value = value;
     }
 
     public String getName() {
-        //implement this
+        return this.name;
     }
-    
+
     public CombatType getCombatType() {
-        //implement this
+        return this.combatType;
     }
 
     public DamageType getDamageType() {
-        //implement this
+        return this.damageType;
     }
 
     public int getDamage() {
-        //implement this
+        return this.damage;
     }
 
     public int getSpeed() {
-        //implement this
+        return this.speed;
     }
 
     public int getMinStrength() {
-        //implement this
+        return this.minStrength;
     }
-    
+
     public int getValue() {
-        //implement this
+        return this.value;
     }
-    
+
     public void setValue(int value) {
-        //implement this
+        this.value = value;
     }
 
     @Override
     public int hashCode() {
-        //implement this
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        //implement this
+        int hash = 7;
+        hash = 11 * hash + Objects.hashCode(this.name);
+        hash = 11 * hash + Objects.hashCode(this.combatType);
+        hash = 11 * hash + Objects.hashCode(this.damageType);
+        hash = 11 * hash + this.damage;
+        hash = 11 * hash + this.speed;
+        hash = 11 * hash + this.minStrength;
+        hash = 11 * hash + this.value;
+        return hash;
     }
 
     @Override
