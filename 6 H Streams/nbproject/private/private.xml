@@ -9,11 +9,11 @@
         </group>
         <group>
             <file>file:/F:/3A/POS/Student_Stub/6%20H%20Streams/src/net/htlgrieskirchen/pos3/streams/Weapon.java</file>
-            <file>file:/F:/3A/POS/Student_Stub/6%20H%20Streams/src/net/htlgrieskirchen/pos3/streams/CombatType.java</file>
-            <file>file:/F:/3A/POS/Student_Stub/6%20H%20Streams/src/net/htlgrieskirchen/pos3/streams/DamageType.java</file>
             <file>file:/F:/3A/POS/Student_Stub/6%20H%20Streams/src/net/htlgrieskirchen/pos3/streams/Printable.java</file>
             <file>file:/F:/3A/POS/Student_Stub/6%20H%20Streams/src/net/htlgrieskirchen/pos3/streams/Main.java</file>
+            <file>file:/F:/3A/POS/Student_Stub/6%20H%20Streams/weapons.csv</file>
             <file>file:/F:/3A/POS/Student_Stub/6%20H%20Streams/src/net/htlgrieskirchen/pos3/streams/Streams.java</file>
+            <file>file:/F:/3A/POS/Student_Stub/6%20H%20Streams/test/net/htlgrieskirchen/pos3/streams/StreamsTest.java</file>
         </group>
     </open-files>
 </project-private>

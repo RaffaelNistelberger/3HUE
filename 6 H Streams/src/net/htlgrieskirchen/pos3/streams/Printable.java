@@ -5,8 +5,6 @@
  */
 package net.htlgrieskirchen.pos3.streams;
 
-import java.util.List;
-
 /**
  *
  * @author raffa
