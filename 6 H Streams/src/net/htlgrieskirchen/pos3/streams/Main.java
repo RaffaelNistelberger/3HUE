@@ -194,18 +194,12 @@ public class Main {
         System.out.println(result);
     }
 
-    public void aufgabeDrei(List<Integer> list, List<String> stringList) throws NullPointerException {
+    public void aufgabeDrei(List<Integer> list, List<String> stringList) {
         final Predicate<Integer> isEven = e -> e % 2 == 0;
         final Predicate<Integer> numberIsZero = e -> e == 0;
         final Predicate<Integer> isPositive = e -> e > 0;
         final Predicate<Integer> isNull = e -> e == null;
         final Predicate<String> isShortWord = e -> e.length() < 4;
-
-        list.stream().filter(isEven.and(isPositive)).forEach((s) -> System.out.println(s));
-        list.stream().filter(isEven.negate().and(isPositive)).forEach((s) -> System.out.println(s));
-
-        stringList.stream().filter(isShortWord).forEach((s) -> System.out.println(s));
-        list.stream().filter(numberIsZero).forEach((s) -> System.out.println(s));
 
         try {
 
